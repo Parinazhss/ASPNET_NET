@@ -1,0 +1,74 @@
+.courses-tools {
+    .container {
+        display: grid ;       
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+        .box {
+            width: 416px; // Bredden på boxen
+            height: 473px; // Höjden på boxen
+            border: 1px solid black; // Ramens färg och tjocklek
+            
+            .price{
+                display: flex;
+                .red{
+                    color: red;
+                }
+                .underline{
+                    text-decoration: line-through;
+                }
+            }
+
+            img {
+                max-width: 100%; // Säkerställer att bilden inte överskrider sin container
+                display: block; // Förhindrar extra mellanrum under bilden
+                position: relative;
+                z-index: 0;
+               
+            }
+              
+            .tag-img{
+              
+             z-index: 1;
+             position: absolute;
+             left: 33%;
+             top: 30%;
+
+            }
+
+            h5, p, h6 {
+                margin: 0;
+                margin-left: 15px;
+                margin-top: 5px;
+            }
+            h6{
+                color: blue;
+            }
+
+            .half-line {
+                width: 93%; // Bredden på halvlinjen
+                border-bottom: 1px solid gray; // Linjens färg och tjocklek
+                margin-left: 15px;
+                margin-top: 45px;
+            }
+
+            .under-text {
+                display: flex;
+                text-align: center;
+                align-items: center;
+               
+                gap: 10px;
+                margin-left: 20px;
+                margin-top: 10px;
+
+                .text {
+                    display: flex;
+                    align-items: center;
+
+                    img {
+                        margin-right: 1px;
+                    }
+                }
+            }
+        }
+    }
+}

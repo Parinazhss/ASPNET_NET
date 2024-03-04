@@ -1,0 +1,62 @@
+
+.container{
+
+
+
+
+.top-menu {
+    display: flex;
+    margin-bottom: 20px; // Lägg till lite avstånd nedanför top-menu, justera efter behov
+
+    .menu {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: black; // Färgen på texten, justera efter behov
+        margin-right: 20px; // Avstånd mellan menyelementen, justera efter behov
+
+        img {
+            margin-right: 10px; // Avstånd mellan ikonen och texten, justera efter behov
+        }
+    }
+}
+
+.categories {
+    display: flex;
+   justify-content:space-between;
+    align-items: center;
+
+
+
+}
+.input {
+    position: relative;
+    margin-left: 0;
+    
+    
+    
+
+    .input-icon2 {
+        position: absolute;
+        left: 90%; // Justera ikonens position inuti inmatningsfältet
+        top: 50%; // Centrera vertikalt
+        transform: translateY(-50%);
+        pointer-events: none; // Så att ikonen inte kan klickas på
+    }
+
+    .input-icon1 {
+        position: absolute;
+        left: 45%; // Justera ikonens position inuti inmatningsfältet
+        top: 50%; // Centrera vertikalt
+        transform: translateY(-50%);
+        pointer-events: none; // Så att ikonen inte kan klickas på
+    }
+
+    input[type="text"] {
+        padding-left: 30px; // Lägg till utrymme till vänster för ikonen
+        border: 1px solid gray;
+    }
+}
+
+
+}

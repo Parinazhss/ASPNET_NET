@@ -1,0 +1,40 @@
+.manage {
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+     
+    img{
+        margin-left: 5%;
+    }
+
+      
+
+    .manage-part {
+        flex: 1; // Tar upp all tillgänglig plats på vänster sida
+        margin-right: 20px; // Justera detta efter behov
+    }
+
+    .container {
+        flex: 2; // Tar upp dubbla bredden av .manage-part
+        text-align: center;
+
+        .box {
+            display: flex;
+            align-items: center;
+            margin-left: 30%;
+        
+            img {
+                margin-right: 10px; // Justera detta för att lägga till önskat avstånd mellan bilden och texten
+            }
+        
+            p {
+                margin: 0; // Tar bort eventuell standardmarginal från texten
+            }
+        }
+
+        .btn-theme {
+            display: inline-block;
+            margin-top: 45px; // Justera detta efter behov
+        }
+    }
+}

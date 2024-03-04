@@ -1,0 +1,52 @@
+
+.skills {
+  
+
+ 
+
+  .container {
+    
+
+    .content-box {
+        height: 442px;
+        width: 1296px;
+        background-color: $gray-100;
+        margin-top: 20px;
+        padding-top: 80px;
+        padding-left: 80px;
+       
+        position: relative;
+
+          h1{
+
+            .highlight{
+
+                    color: $theme-secondary ;
+            }
+          }
+
+         .image-background{
+            position: absolute;
+            left: 55%;
+            bottom: 10%;
+         }
+
+         a.btn-theme-s {
+            display: inline-block;
+            
+            margin-bottom: 100px;
+            size: 10px;
+            padding: 10px 20px;
+            background-color: #007bff; // Change to your desired theme color
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+    
+            &:hover {
+                background-color: #0056b3; // Change to your desired hover color
+            }
+        }
+    }
+  }
+}

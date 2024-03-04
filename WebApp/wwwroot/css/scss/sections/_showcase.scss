@@ -1,4 +1,86 @@
-showcase {
-    position : relative;
+.showcase {
+  position: relative;
+  margin-bottom: 80px;
+
+  @include lg {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 0px;
+  }
+
+  img {
+    display: none;
+
+    @include lg {
+      display: flex;
+      width: 45%;
+      position: relative;
+      z-index: -1;
+   
+    }
+  }
+
+  .container{
+    height: 100%;
+    margin-top: 90px;
+   
+
+    @include lg {
+      position: absolute;
+      left: 0;
+      right: 0;
+    }
+
+    .content {
+     margin-top: 20px;
+      width: 100%;
+
+      h1 {
+        margin-bottom: 20px;
+      }
+
+      p{
+        margin-bottom: 70px;
+      }
+
+      h6 {
+        margin-top: 30px;
+        margin-bottom: 25px;
+      }
+     
+      
+
+      a.btn-theme-s {
+        display: inline-block;
+        
+        margin-bottom: 100px;
+        size: 10px;
+        padding: 10px 20px;
+        background-color: #007bff; // Change to your desired theme color
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+            background-color: #0056b3; // Change to your desired hover color
+        }
+    }
+      
+      .brands {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
     
+        img {
+            margin-top: 10px; // Justera detta värde efter behov för att lägga till mellanrum mellan bilderna
+            width: 100px;
+            gap: 20px;
+        }
+    }
+      
+    
+    }
+  }
 }

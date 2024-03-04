@@ -1,0 +1,59 @@
+.signin{
+    display: flex;
+    justify-content: center; /* Centrera innehållet horisontellt */
+    align-items: center; /* Centrera innehållet vertikalt */
+    height: 100vh; /* Gör sektionen lika hög som fönstret */
+    text-align: center;
+    
+
+    .container{
+        text-align: center;
+
+        .here{
+            display: flex;
+            text-align: center;
+            justify-content: center;
+        }
+         
+        label{
+            margin-right: 22%;
+            padding-top: 20px;
+            padding-bottom: 20px;
+
+        }
+
+        .btn-theme-s{
+            width: 30%;
+            margin-left: 35%;
+            margin-bottom: 15px;
+        }
+
+
+        form {
+            display: flex;
+            flex-direction: column; /* Placera elementen under varandra */
+            align-items: center; 
+            padding-top: 30px;
+
+            h6{
+                text-align: left;
+                margin-right: 24%;
+                margin-top: 30px;
+            }
+
+           input{
+                   
+                    width: 30%; /* Ta upp hela bredden av formuläret */
+                    border-color:transparent;
+                    border: 1px solid gray;
+                    padding: 5px;
+                    border-radius: 5px 5px 5px 5px ;
+                   
+           }
+            
+
+            
+        }
+    }
+}
+  

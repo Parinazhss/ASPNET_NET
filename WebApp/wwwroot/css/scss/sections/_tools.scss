@@ -1,0 +1,43 @@
+.tools {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding-top: 50px; // Avstånd från toppen
+
+        h1 {
+            margin-bottom: 10px; // Justera detta efter behov
+        }
+
+        p {
+            margin: 0; // Tar bort standardmarginalen för <p> för att undvika extra avstånd
+        }
+
+        .tools-features {
+            padding-top: 30px;
+
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); // Skapar fyra kolumner med lika storlek
+            grid-gap: 20px; // Avstånd mellan rutorna, justera efter behov
+        
+            .box {
+                background-color: white; // Bakgrundsfärg för varje ruta, ändra efter behov
+                padding: 20px; // Fyllning inuti varje ruta, justera efter behov
+              
+        
+                img {
+                    max-width: 100%; // Säkerställer att bilden inte överskrider sin container
+                    display: block; // Förhindrar extra mellanrum under bilden
+                    margin-bottom: 10px; // Avstånd mellan bild och text, justera efter behov
+                }
+        
+                p {
+                    text-align: left;
+                    
+                }
+            }
+        }
+    }
+}

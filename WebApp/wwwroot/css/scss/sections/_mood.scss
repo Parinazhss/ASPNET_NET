@@ -1,0 +1,38 @@
+.mood {
+   
+    position: relative;
+    display: flex;
+    height: 100vh;
+
+    .container {
+        padding-top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: center;
+        width: 50%;
+    }
+
+    h1 {
+        background: linear-gradient(to right, white 45%, black 55%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        position: relative;
+        right: 50%;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        position: relative;
+        right: 52%;
+    }
+
+    &::before {
+        content: "";
+        flex: 1;
+        background-color: black; // Ändra färgen till önskad svart nyans
+    }
+}

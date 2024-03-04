@@ -1,0 +1,92 @@
+.newsletter {
+    background-color: $gray-100;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    .container {
+        
+      .title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+      }
+        h1 {
+            margin-right: 10px; // Justera detta efter behov för avstånd mellan texten och bilden
+        }
+
+        img {
+            max-width: 100%; // Säkerställer att bilden inte överskrider sin container
+            display: block; // Förhindrar extra mellanrum under bilden
+        }
+
+
+     .letter-tools {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); // Skapar fyra kolumner
+            grid-gap: 0px; // Avstånd mellan rutorna
+           
+        
+            h5 {
+                grid-column: span 2; // Titeln tar upp två kolumner
+                grid-row: 2; // Titeln tar första raden
+            }
+        
+            .checkbox-container {
+                grid-column: span 3; // Checkbox-container tar upp tre kolumner
+                grid-row: 2; // Checkbox-container tar andra raden
+        
+                display: grid;
+                grid-template-columns: repeat(3, 1fr); // Skapar tre kolumner för checkboxarna
+                grid-gap: 10px; // Avstånd mellan rutorna
+        
+                .checkbox {
+                    display: flex;
+                    align-items: center;
+        
+                    input[type="checkbox"] {
+                        margin-right: 5px; // Justera detta efter behov för avståndet mellan kryssrutan och texten
+                    }
+                }
+            }
+        }
+
+        .email-box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            gap: 10px;
+        
+            input[type="email"] {
+                padding: 10px;
+                border: none;
+                border-radius: 10px 10px 10px 10px; // Runda bara av vänsterkanten
+                width: 600px; // Justera bredden efter behov
+            }
+        
+            .btn-theme-s {
+                background-color: #007bff; // Justera bakgrundsfärgen efter behov
+                color: #fff; // Justera textfärgen efter behov
+                padding: 10px 20px;
+                border: none;
+                border-radius:  10px 10px 10px 10px; // Runda bara av högerkanten
+                text-decoration: none;
+                transition: background-color 0.3s ease; // Lägg till en övergångseffekt för hover
+            }
+        
+            .btn-theme-s:hover {
+                background-color: #0056b3; // Justera bakgrundsfärgen för hover
+            }
+        }
+        
+        .terms{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            right: 7%;
+        
+        }
+    }
+}
