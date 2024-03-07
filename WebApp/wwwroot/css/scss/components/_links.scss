@@ -1,11 +1,11 @@
 a {
     @include standard-text;
     color: $theme;
-    text-decoration: none;
+    text-decoration: underline;
     transition: all 0.25s ease-in-out;
 
     &:hover {
-        text-decoration: underline;
+        text-decoration: none;
     }
 }
 
@@ -19,6 +19,6 @@ a {
     &:focus,
     .active {
         color: $theme;
-        text-decoration: none;
+        text-decoration: underline;
     }
 }
