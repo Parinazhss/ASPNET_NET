@@ -1,20 +1,18 @@
-@import './core/_media.scss';
-@import './core/_typography.scss';
-@import './core/_colors.scss';
-@import './core/_base.scss';
+@import './core/media';
+@import './core/typography';
+@import './core/colors';
+@import './core/base';
+
 @import './sections/_header.scss';
+
 @import './sections/_showcase.scss';
 @import './sections/_features.scss';
-
 @import './sections/_mood.scss';
 @import './sections/_manage.scss';
 @import './sections/_devices.scss';
 @import './sections/_tools.scss';
 @import './sections/_newsletter.scss';
+
 @import './sections/_footer.scss';
 
-@import './sections/_courses.scss';
-@import './sections/_cuurses-tools.scss';
-@import './sections/_pages-numbers.scss';
-@import './sections/_skills.scss';
-@import './sections/_signin.scss';
+@import './sections/_signup.scss';
